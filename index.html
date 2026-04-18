@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyBis – Gift Card Wallet</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #fff;
+      color: #1a1a1a;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(145deg, #0A5FA0 0%, #1A7EC8 60%, #2196F3 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 24px 100px;
+    }
+    .app-icon {
+      width: 96px; height: 96px;
+      background: #fff;
+      border-radius: 22px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 24px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+      font-size: 48px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      color: rgba(255,255,255,0.85);
+      max-width: 480px;
+      margin: 0 auto 36px;
+      line-height: 1.6;
+    }
+    .btn-appstore {
+      display: inline-block;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+    .btn-appstore:hover { opacity: 0.8; }
+    .btn-appstore span { display: block; font-size: 0.72rem; font-weight: 400; opacity: 0.8; }
+
+    /* ── FEATURES ── */
+    .features {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 72px 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 32px;
+    }
+    .feature {
+      text-align: center;
+      padding: 28px 20px;
+      border-radius: 20px;
+      background: #F8FAFF;
+      border: 1px solid #E8F0FF;
+    }
+    .feature-icon {
+      font-size: 2.4rem;
+      margin-bottom: 14px;
+    }
+    .feature h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #1A7EC8;
+    }
+    .feature p {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* ── PRIVACY STRIP ── */
+    .privacy {
+      background: #F0F7FF;
+      text-align: center;
+      padding: 48px 24px;
+      border-top: 1px solid #DCF0FF;
+      border-bottom: 1px solid #DCF0FF;
+    }
+    .privacy h2 { font-size: 1.4rem; color: #1A7EC8; margin-bottom: 10px; }
+    .privacy p { font-size: 0.95rem; color: #444; max-width: 520px; margin: 0 auto; line-height: 1.7; }
+
+    /* ── HE SECTION ── */
+    .he-section {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 64px 24px;
+      text-align: right;
+      direction: rtl;
+    }
+    .he-section h2 { font-size: 1.6rem; font-weight: 800; color: #1A7EC8; margin-bottom: 12px; }
+    .he-section p { font-size: 0.97rem; color: #444; line-height: 1.8; }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.85rem;
+      color: #999;
+      border-top: 1px solid #eee;
+    }
+    footer a { color: #1A7EC8; text-decoration: none; margin: 0 8px; }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="app-icon">🧾</div>
+    <h1>MyBis</h1>
+    <p>The smart gift card wallet. Save, organize, and redeem your vouchers — before they expire.</p>
+    <a class="btn-appstore" href="https://apps.apple.com/app/mybis/id000000000" target="_blank">
+      <span>Download on the</span>
+      App Store
+    </a>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature">
+      <div class="feature-icon">📸</div>
+      <h3>Scan & Save</h3>
+      <p>Photograph your gift cards and store them securely, always within reach.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">📁</div>
+      <h3>Organize</h3>
+      <p>Create folders by store, person, or occasion. Find any voucher in seconds.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">⏰</div>
+      <h3>Smart Reminders</h3>
+      <p>Get notified before your vouchers expire. Never waste a gift card again.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🔒</div>
+      <h3>Face ID Protection</h3>
+      <p>Lock the app with Face ID. Your vouchers stay private and secure.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">📊</div>
+      <h3>Barcode Scanner</h3>
+      <p>Scan barcodes for instant use at checkout. No more fumbling with paper.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🗑️</div>
+      <h3>Recycle Bin</h3>
+      <p>Accidentally deleted a voucher? Recover it anytime within 30 days.</p>
+    </div>
+  </section>
+
+  <!-- PRIVACY -->
+  <section class="privacy">
+    <h2>🔐 100% Private</h2>
+    <p>All your data is stored <strong>on your device only</strong>. MyBis uses no servers, no cloud, no analytics. Your vouchers never leave your phone.</p>
+  </section>
+
+  <!-- HEBREW -->
+  <section class="he-section">
+    <h2>מה זה MyBis?</h2>
+    <p>MyBis הוא הארנק הדיגיטלי החכם לשוברי מתנה וכרטיסי הנחה. במקום לאבד שוברים במגירה — שמור הכל במקום אחד, מאורגן ותמיד בהישג יד. עם תזכורות חכמות לפני פקיעת תוקף ואימות Face ID לפרטיות מלאה.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Lior Blulu &nbsp;·&nbsp;
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </p>
+  </footer>
+
+</body>
+</html>
