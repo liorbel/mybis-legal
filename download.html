@@ -29,17 +29,14 @@
     }
 
     .logo-wrap {
-      width: 96px;
-      height: 96px;
-      border-radius: 26px;
-      background: linear-gradient(135deg, #019BED, #0172b0);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 110px;
+      height: 110px;
+      border-radius: 28px;
+      overflow: hidden;
       margin: 0 auto 20px;
       box-shadow: 0 8px 24px rgba(1,155,237,0.35);
     }
-    .logo-wrap svg { width: 52px; height: 52px; }
+    .logo-wrap img { width: 100%; height: 100%; object-fit: cover; }
 
     .app-name {
       font-size: 36px;
@@ -162,11 +159,7 @@
   <div class="card">
 
     <div class="logo-wrap">
-      <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="12" width="36" height="28" rx="5" stroke="white" stroke-width="2.5"/>
-        <path d="M16 12V10a2 2 0 012-2h16a2 2 0 012 2v2" stroke="white" stroke-width="2.5"/>
-        <path d="M16 22h20M16 29h12" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-      </svg>
+      <img src="logo.png" alt="MyBis" />
     </div>
 
     <div class="app-name">mybis</div>
@@ -200,7 +193,7 @@
       </div>
     </div>
 
-    <a class="download-btn" href="REPLACE_WITH_APK_URL">
+    <a class="download-btn" href="https://expo.dev/artifacts/eas/vZ6CZxyQBS966ZBNzDWCmg.apk">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
         <polyline points="7 10 12 15 17 10"/>
